@@ -7,10 +7,18 @@
     "start": "nodemon --exec babel-node server.js --ignore public/",
     "dev": "webpack -wd"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/entreprenerder/reactEnv"
+  },
   "author": "Jason Clements",
   "license": "MIT",
   "dependencies": {
+    "axios": "^0.15.3",
+    "body-parser": "^1.15.2",
     "express": "^4.14.0",
+    "jade": "~1.11.0",
+    "json-loader": "^0.5.4",
     "mongodb": "^2.2.20",
     "react": "^15.4.2",
     "react-dom": "^15.4.2"
