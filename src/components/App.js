@@ -1,6 +1,6 @@
 import React from 'react';
 import radium from 'radium';
-import styles from './styles/AppStyles.js';
+import styles from '../../src/styles/App.js';
 
 @radium
 class App extends React.Component {

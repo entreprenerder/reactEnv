@@ -1,7 +1,7 @@
 const styles = {
     app: {
         fontSize: 24,
-        color: "blue"
+        color: "purple"
     }
 }
 

@@ -22090,9 +22090,9 @@
 	
 	var _radium2 = _interopRequireDefault(_radium);
 	
-	var _AppStyles = __webpack_require__(/*! ./styles/AppStyles.js */ 247);
+	var _App = __webpack_require__(/*! ../../src/styles/App.js */ 249);
 	
-	var _AppStyles2 = _interopRequireDefault(_AppStyles);
+	var _App2 = _interopRequireDefault(_App);
 	
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 	
@@ -22116,7 +22116,7 @@
 	    value: function render() {
 	      return _react2.default.createElement(
 	        'div',
-	        { style: _AppStyles2.default.app },
+	        { style: _App2.default.app },
 	        'Hello React'
 	      );
 	    }
@@ -26583,10 +26583,12 @@
 /* 244 */,
 /* 245 */,
 /* 246 */,
-/* 247 */
-/*!********************************************!*\
-  !*** ./src/components/styles/AppStyles.js ***!
-  \********************************************/
+/* 247 */,
+/* 248 */,
+/* 249 */
+/*!***************************!*\
+  !*** ./src/styles/App.js ***!
+  \***************************/
 /***/ function(module, exports) {
 
 	"use strict";
@@ -26597,7 +26599,7 @@
 	var styles = {
 	    app: {
 	        fontSize: 24,
-	        color: "blue"
+	        color: "purple"
 	    }
 	};
 	
