@@ -1,7 +1,7 @@
 let siteRules = [{
-  "body": {
-    WebkitFontSmoothing: "antialiased",
-    MozOsxFontSmoothing: "grayscale"
+  'body': {
+    WebkitFontSmoothing: 'antialiased',
+    MozOsxFontSmoothing: 'grayscale'
   }
 }];
 

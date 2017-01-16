@@ -1,6 +1,7 @@
 import React from 'react';
 import radium, {Style} from 'radium';
 import styles from '../../src/styles/App.js';
+import siteRules from '../../src/styles/rules.js';
 
 @radium
 class App extends React.Component {
@@ -14,6 +15,6 @@ class App extends React.Component {
     );
   }
 
-};
+}
 
 export default App;
