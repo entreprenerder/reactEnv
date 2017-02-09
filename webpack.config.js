@@ -8,14 +8,18 @@ module.exports = {
     loaders: [
       {
         test: /\.json$/,
+        exclude: /(node_modules)/,
         loader: 'json-loader'
       },
       {
         test: /\.js$/,
-        loader: 'babel-loader'
+        loader: 'babel-loader',
+        exclude: /(node_modules)/,
+        presets: ["react", "es2015", "stage-0"]
       },
       {
         test: /\.(png|jpg)$/,
+        exclude: /(node_modules)/,
         loader: 'url-loader'
       }
     ]
