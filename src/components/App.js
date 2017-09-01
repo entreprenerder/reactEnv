@@ -10,6 +10,9 @@ class App extends React.Component {
     return (
       <div style={styles.app}>
         <div>Hello World</div>
+
+        {this.props.children}
+
         {siteRules.map((rules, index) => <Style key={`style-rule-${index}`} rules={rules} />)}
       </div>
     );
