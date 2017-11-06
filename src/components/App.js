@@ -8,6 +8,7 @@ class App extends Component {
     return (
       <div>
         <Route exact path='/' render={() => <Example>Hello World</Example>} />
+        <Route exact path='/example' render={() => <Example>New Page</Example>} />
       </div>
     );
   }
