@@ -1,8 +1,8 @@
-import React, {Component} from 'react';
+import * as React from 'react';
 import {Route} from 'react-router-dom';
-import Example from './Example.js';
+import Example from './Example';
 
-class App extends Component {
+class App extends React.Component {
 
   render() {
     return (

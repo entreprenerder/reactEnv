@@ -1,20 +1,30 @@
 module.exports = {
-  entry: './src/index.js',
-  output: {
-    path: __dirname + '/public',
-    filename: 'bundle.js'
-  },
-  module: {
-    loaders: [
-      {
-        test: /\.js$/,
-        exclude: /node_modules/,
-        loader: 'babel-loader'
-      },
-      {
-        test: /\.(png|jpg|gif)(\?v=\d+\.\d+\.\d+)?$/,
-        loader: 'url-loader'
-      }
-    ]
-  }
+    entry: "./src/index.tsx",
+    output: {
+        filename: "bundle.js",
+        path: __dirname + "/public"
+    },
+    devtool: "source-map",
+    resolve: {
+        extensions: [".ts", ".tsx", ".js", ".json"]
+    },
+    module: {
+        loaders: [
+            {
+              test: /\.tsx?$/,
+              exclude: /node_modules/,
+              loader: "ts-loader"
+            },
+            {
+              enforce: "pre",
+              test: /\.js$/,
+              exclude: /node_modules/,
+              loader: "source-map-loader"
+            }
+        ]
+    },
+    externals: {
+        "react": "React",
+        "react-dom": "ReactDOM"
+    },
 };
