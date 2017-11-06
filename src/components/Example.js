@@ -1,16 +1,7 @@
-import React from 'react';
+import styled from 'styled-components';
 
-
-class Example extends React.Component {
-
-  render() {
-    return (
-      <div>
-        <div>Hello World</div>
-      </div>
-    );
-  }
-
-}
+const Example = styled.div`
+  color: red;
+`;
 
 export default Example;

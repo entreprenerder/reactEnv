@@ -1,0 +1,7 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: arial, sans-serif;
+  font-size: 14px;
+  color: #fff;
+}

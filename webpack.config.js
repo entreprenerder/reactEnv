@@ -7,19 +7,12 @@ module.exports = {
   module: {
     loaders: [
       {
-        test: /\.json$/,
-        exclude: /(node_modules)/,
-        loader: 'json-loader'
-      },
-      {
         test: /\.js$/,
-        loader: 'babel-loader',
-        exclude: /(node_modules)/,
-        presets: ["react", "es2015", "stage-0"]
+        exclude: /node_modules/,
+        loader: 'babel-loader'
       },
       {
-        test: /\.(png|jpg)$/,
-        exclude: /(node_modules)/,
+        test: /\.(png|jpg|gif)(\?v=\d+\.\d+\.\d+)?$/,
         loader: 'url-loader'
       }
     ]
