@@ -1,5 +1,5 @@
 module.exports = {
-  "parser": 'babel-eslint',
+  "parser": 'typescript-eslint-parser',
   "env": {
     "browser": true,
     "commonjs": true,
@@ -16,6 +16,7 @@ module.exports = {
   },
   "plugins": [ "react" ],
   "rules": {
+    "typescript/rule-name": "error",
     "indent": ["error", 2],
     "linebreak-style": ["error","unix"],
     "quotes": ["error","single"],
