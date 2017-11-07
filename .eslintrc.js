@@ -14,9 +14,9 @@ module.exports = {
     },
     "sourceType": "module"
   },
-  "plugins": [ "react" ],
+  "plugins": [ "react", "typescript" ],
   "rules": {
-    "typescript/rule-name": "error",
+    "typescript/no-unused-vars": "error",
     "indent": ["error", 2],
     "linebreak-style": ["error","unix"],
     "quotes": ["error","single"],
