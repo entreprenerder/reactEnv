@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon --exec node app.js --ignore public/",
-    "dev": "webpack",
+    "dev": "webpack -wd",
     "lint": "eslint src/**/*.tsx"
   },
   "repository": {
@@ -46,7 +46,6 @@
     "typescript": "^2.6.1",
     "typescript-eslint-parser": "^8.0.1",
     "url-loader": "^0.6.2",
-    "webpack": "^3.8.1",
-    "webpack-core": "^0.6.9"
+    "webpack": "^3.8.1"
   }
 }

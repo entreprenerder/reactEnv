@@ -1,8 +1,11 @@
+const path = require('path');
+
 module.exports = {
     entry: "./src/index.tsx",
     output: {
-        filename: "bundle.js",
-        path: __dirname + "/public"
+        path: path.join(__dirname, "/public"),
+        publicPath: "/public",
+        filename: "bundle.js"
     },
     devtool: "source-map",
     resolve: {
@@ -11,15 +14,20 @@ module.exports = {
     module: {
         loaders: [
             {
-              test: /\.tsx?$/,
-              exclude: /node_modules/,
-              loader: "ts-loader"
+                test: /\.tsx?$/,
+                exclude: /node_modules/,
+                loader: "ts-loader"
             },
             {
-              enforce: "pre",
-              test: /\.js$/,
-              exclude: /node_modules/,
-              loader: "source-map-loader"
+                enforce: "pre",
+                test: /\.js$/,
+                exclude: /node_modules/,
+                loader: "source-map-loader"
+            },
+            {
+                test: /\.(png|jpg|gif)(\?v=\d+\.\d+\.\d+)?$/,
+                exclude: /node_modules/,
+                loader: 'url-loader'
             }
         ]
     }
