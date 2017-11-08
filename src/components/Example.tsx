@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 const Example = styled.div`
-  color: red;
+  font-size: 25px;
 `;
 
 export default Example;
